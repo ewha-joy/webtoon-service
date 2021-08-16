@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      uri: http://27.96.131.221:30080
+      uri: http://localhost:8888
       name: joytoon-webtoon-service
 gateway:
   ip:

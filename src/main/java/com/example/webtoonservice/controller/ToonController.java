@@ -252,6 +252,7 @@ public class ToonController {
     // 선호작품 가져오기
     @GetMapping("/getFav/{user}")
     public Collection<Fav> getFav(@PathVariable("user") String user){
+        System.out.println(favRepository.getFav(user));
         return favRepository.getFav(user);
     }
 

@@ -21,6 +21,7 @@ public class Fav extends DateAudit{
 
     private String username;
 
+    private Integer webtoonId;
 
     @JsonBackReference
     @ManyToOne
@@ -35,6 +36,7 @@ public class Fav extends DateAudit{
         this.title = title;
         this.username=username;
         this.toon = toon;
+        this.webtoonId = toon.getTno();
     }
 
 }
